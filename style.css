@@ -1,0 +1,159 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+}
+
+.top-bar {
+    height: 78px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.search {
+    background: #f3f3f3;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+.hero-grid {
+    min-height: calc(100vh - 78px);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tile {
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tile img {
+    width: 75%;
+    max-width: 220px;
+    transform: rotate(-6deg);
+    opacity: 0.95;
+}
+
+.orange { 
+    background: linear-gradient(135deg, #ff8b1f, #c43500); 
+}
+
+.green { 
+    background: linear-gradient(135deg, #b7db3a, #4f7b12); 
+}
+
+.blue { 
+    background: linear-gradient(135deg, #34d2ff, #00658d); 
+}
+.yellow { 
+    background: linear-gradient(135deg, #ffbd21, #7c2f00); 
+}
+
+.cyan { 
+    background: linear-gradient(135deg, #27b6ff, #0e3668); 
+}
+
+.red { 
+    background: linear-gradient(135deg, #ff6d7a, #92002d); 
+}
+
+.mint { 
+    background: linear-gradient(135deg, #2dff9f, #008a59); 
+}
+
+.sky { 
+    background: linear-gradient(135deg, #57ebff, #007195); 
+}
+
+.purple { 
+    background: linear-gradient(135deg, #8d63ff, #2f0072); 
+}
+
+.sea { 
+    background: linear-gradient(135deg, #4fd8ff, #004b74); 
+}
+
+.sand { 
+    background: linear-gradient(135deg, #ffe4be, #be8c53); 
+}
+
+.rose { 
+    background: linear-gradient(135deg, #f8a5ac, #823652); 
+}
+
+.dark { 
+    background: linear-gradient(135deg, #192336, #060b14); 
+}
+
+.deep { 
+    background: linear-gradient(135deg, #0f2f66, #000c1e); 
+}
+
+.glow { 
+    background: linear-gradient(135deg, #ef9c8c, #7d1504); 
+}
+
+.cool { 
+    background: linear-gradient(135deg, #7ae8ff, #0c4f8b); 
+}
+
+.overlay-text {
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 14px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h1 {
+    margin: 0;
+    font-size: 70px;
+    line-height: 1;
+}
+
+.overlay-text p {
+    font-size: 21px;
+    margin: 14px 0;
+}
+
+.overlay-text button {
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
